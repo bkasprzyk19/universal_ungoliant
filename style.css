@@ -1,29 +1,25 @@
 
-html, body {
-    height:100%;}
+
 
 body{
     background-color:black;
 
     background-image:  url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw2121a.jpg" );
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    border: blueviolet 10px;
+    margin: royalblue 10px
+}   
 
-}
 
 
 
 footer{
-
-    background-image: url(https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/1-pia23989-1041.jpg);
-    background-size: width="1000" height="200";
-    background-repeat: no-repeat;
-    background-position: bottom;
-
+  
     background-color: transparent;
     color: maroon;
-    text-align: bottom;
+    text-align: center;
     text-decoration-color:black;   
 
 }
