@@ -1,10 +1,16 @@
-let userAge = promt("How old are you?")
+functrion incrementButton() {
+    let element = document.getElementById('incrementText');
+    let value = element.innerHTML ;
+    let num = parseInt(value);
 
-let userAnswer = promt("Do you wish to join??")
-if (userAnswer.toLowerCase() == 'yes'){
-document.write('APPLY')}
+    num += 1;
 
-today = Date()
+    console.log(nun);
+    document.getElementById('incrementText').innerHTML = nun;
 
-console.log(today)
+
+
+
+}
+
 

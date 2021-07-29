@@ -2,24 +2,26 @@
 
 
 body{
+
     background-color:black;
 
     background-image:  url("https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw2121a.jpg" );
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border: blueviolet 10px;
-    margin: royalblue 10px
+  
+
 }   
 
 
 
 
 footer{
+
+
   
-    background-color: transparent;
     color: maroon;
-    text-align: center;
+    text-align: left;
     text-decoration-color:black;   
 
 }
