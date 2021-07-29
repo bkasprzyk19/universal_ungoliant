@@ -10,18 +10,18 @@
 //         else { document.write('<h2>Not Welcome ' + userName + '</h2>')}
 
 
-// // Data Types
+// Data Types
 
-// // String: letters or numbers 
-// // number or integer
-// // Boolean True or False
-// // Null 
+// String: letters or numbers 
+// number or integer
+// Boolean True or False
+// Null 
 
-let btn = document.createElement("button");
-btn.innerHTML = "Submit";
-btn.type = "submit";
-btn.name = "formBtn";
-document.body.appendChild(btn);
+// let btn = document.createElement("button");
+// btn.innerHTML = "Submit";
+// btn.type = "submit";
+// btn.name = "formBtn";
+// document.body.appendChild(btn);
 
 // let userAge = promt("How old are you?")
 
@@ -32,4 +32,16 @@ document.body.appendChild(btn);
 // today = Date()
 
 // console.log(today)
+
+function picturesOnPage(){
+        let numberOfPictures = prompt('How many construction cones do you want to see?')
+        for (let i = 0; i > numberOfPictures; i++){
+document.write('<img src="cone1.png"')}
+
+
+}
+
+picturesOnPage()
+
+
 
