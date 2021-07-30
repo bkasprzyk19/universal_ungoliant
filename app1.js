@@ -28,7 +28,7 @@ function getguessingGame(){
     guesses = 5;
     for(let i=0; i < guesses; i=i+1) {
         let guessLeft = guesses - i;
-        let userGuess = parseInt(prompt('Please enter a number between 1 and 100. You have ' + (guesses - i) + ' left'));
+        let userGuess = parseInt(prompt('Please enter a number between 1 and 100. You have ' + (guesses - i) + ' guesses left'));
         while(userGuess < 1 || userGuess >100){
         userGuess = parseInt(promt('Try Again: Enter a number between 1 and 100'));}
 
@@ -39,7 +39,7 @@ function getguessingGame(){
     
     if(userGuess > correctAnswer){
         alert ('sorry, too high')};
-     if(userGuess < correctAnswer){
+    if(userGuess < correctAnswer){
             alert ('sorry, too low')};
            
             ;
