@@ -1,7 +1,8 @@
-let userName = prompt('What is your account name?')
+
 
 function getUserName(){
-    if(userName.toLowerCase() == 'admin'){
+    let userName = prompt('What is your account name?')
+    if(userName == 'admin'){
         document.write('<h2>Welcome Home ' + userName + '</h2>');}
     else {   document.write('<h2>Welcome New User ' + userName + '</h2>');
 
@@ -12,41 +13,39 @@ function getUserName(){
 getUserName();
 
 
-let userGuess = prompt('Please enter a number between 1 and 100.')
+
 
 function randomNumber(){
-    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    let randomNumber = Math.floor(Math.random() * 4) + 1;
     return randomNumber
 }
 
 function getguessingGame(){
 
    
-
-    correctAnswer = randomNumber();
+    let userGuess = prompt('Please enter a number between 1 and 100.')
+    let correctAnswer = randomNumber();
    console.log(randomNumber);
-    guesses = 5;
+    let guesses = 5;
     for(let i=0; i < guesses; i=i+1) {
         let guessLeft = guesses - i;
         let userGuess = parseInt(prompt('Please enter a number between 1 and 100. You have ' + (guesses - i) + ' guesses left'));
-        while(userGuess < 1 || userGuess >100){
-        userGuess = parseInt(promt('Try Again: Enter a number between 1 and 100'));}
+        while(userGuess < 1 || userGuess >4){
+        userGuess = parseInt(prompt('Try Again: Enter a number between 1 and 100'));}
 
-    }
+    
     if(userGuess == correctAnswer){
         alert('WooHoo! You nailed it!');
-        ;}
+        break;
+        };
     
     if(userGuess > correctAnswer){
         alert ('sorry, too high')};
     if(userGuess < correctAnswer){
             alert ('sorry, too low')};
            
-            ;
-    
-
+           }       ;
       
-    
 
 }
 getguessingGame();
